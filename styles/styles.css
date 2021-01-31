@@ -1,0 +1,218 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  height: 100%;
+  -ms-overflow-style: none;
+  color: white;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  position: static;
+}
+  .scoretext{
+    color: hsl(229, 25%, 31%);
+  }
+ .header{
+   margin: 0 20% 0%;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+   border:solid 2px;
+   border-color: hsl(217, 16%, 45%);
+   border-radius: 20px;
+   padding: 2%;
+   margin-bottom:5%;
+ }
+ .logo{
+   max-width: 60%;
+   float:left;
+ }
+ .score{
+
+   border-radius: 8px;
+   padding: 15px;
+   text-transform: uppercase;
+   color: hsl(229, 64%, 46%);
+   float:right;
+   text-align: center;
+   background-color: white;
+
+ }
+ .game-wrapper{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+
+
+ }
+ .game-heading{
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 2%;
+   visibility: hidden;
+ }
+ .user-heading,
+ .computer-heading{
+   width:50%;
+   text-align: center;
+ }
+
+.game-heading.active{
+  visibility: visible;
+}
+
+.game-board{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+button{
+  background-color: inherit;
+  padding: 0;
+  border: 0;
+}
+
+ .start{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      width:50%;
+      height: 40%;
+      text-align: center;
+      visibility: visible;
+}
+  .upper-box{
+    display: flex;
+    justify-content: center;
+  }
+  .low-box{
+    display:flex;
+    justify-content: space-around;
+  }
+.start-comp{
+  margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 40%;
+  text-align: center;
+  visibility: hidden;
+}
+.start-comp.active{
+  visibility: visible;
+}
+
+
+.icon {
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+  .outline-rock {
+  padding: 10px;
+  background-color:  hsl(349, 71%, 52%);
+  border-radius: 50%;
+}
+.outline-paper{
+  padding: 10px;
+  background-color:  hsl(230, 89%, 62%);
+  border-radius: 50%;
+}
+
+.outline-scissor{
+  padding: 10px;
+  background-color:  hsl(39, 89%, 49%);
+  border-radius: 50%;
+}
+
+.outline-paper:hover,
+.outline-scissor:hover,
+.outline-rock :hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+
+
+.result-block{
+  position: absolute;
+  left:48%;
+  margin-top:5%;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
+
+.result-block.active{
+  visibility: visible;
+}
+
+.play-again{
+  background-color: #fff;
+  margin-top: 2%;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  padding: 2%;
+}
+
+
+ .rules{
+   display: flex;
+   justify-content: center;
+   position: relative;
+   left:65%;
+   bottom:10%;
+   width:10%;
+   color: white;
+   background-color: inherit;
+   border: solid 1px;
+   padding: 5px 10px 5px;
+   border-radius: 5px;
+   z-index: 1;
+   margin-top: 5%;
+ }
+
+ .user-number{
+   position :absolute;
+   visibility: hidden;
+ }
+
+
+ .close {
+
+    float: right;
+
+}
+.rules-txt{
+  display: inline;
+}
+.modal-wrap{
+  color: hsl(229, 25%, 31%);
+  background-color: white;
+  position: absolute;
+  right:35%;
+  padding: 3%;
+  visibility: hidden;
+}
+.modal-wrap.active{
+  visibility: visible;
+}
+.modal-content{
+  visibility: hidden;
+  margin-top: 2%;
+}
+.modal-content.active{
+  visibility: visible;
+}

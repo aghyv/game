@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Barlow+Semi+Condensed">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+
+<body>
+
+  <div class="header">
+    <img id="logo" src="images/logo.svg" alt="">
+    <div class="score">
+      <span>Score</span> <br>
+      <h1 class="scoretext">0</h1>
+    </div>
+  </div>
+
+<div class="game-wrapper">
+
+<div class="game-heading">
+      <div class="user-heading">
+      <h2>You Picked</h2>
+    </div>
+    <div class="computer-heading">
+      <h2>The House Picked</h2>
+    </div>
+</div>
+<div class="game-board">
+  <div class="start">
+    <div class="upper-box">
+      <button id="rock" type="button" name="btn-rock" value="2">
+      <div class="outline-rock">
+        <div class="icon">
+          <img src="images/icon2.svg" alt="rock">
+        </div>
+    </div>
+    </button>
+    </div>
+    <div class="low-box">
+    <button id="paper" type="button" name="btn-paper" value="3">
+      <div class="outline-paper">
+        <div class="icon">
+          <img src="images/icon3.svg" alt="paper">
+        </div>
+      </div>
+      </button>
+      <button id="scissors" type="button" name="btn-scisssor" value="1">
+      <div class="outline-scissor">
+        <div class="icon">
+          <img src="images/icon1.svg" alt="scissors">
+        </div>
+    </div>
+  </button>
+    </div>
+
+</div>
+
+<div class="start-comp">
+  <div class="outline-scissor">
+    <div class="icon">
+      <img id="computerChoice" src="images/iconc2.svg" alt="computer">
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="result-block">
+  <h2 class="result">You Win</h2>
+  <button class="play-again">Play Again</button>
+</div>
+
+
+
+
+  <button class="rules">Rules</button>
+  <div class="modal-wrap">
+    <h2 class="rules-txt">RULES</h2>
+    <img class="close" src="images/icon-close.svg" alt="">
+    <div class="modal-content">
+
+
+      <img src="images/image-rules.svg" alt="rules">
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="js/jquery.js" charset="utf-8"></script>
+  <script src="js/index.js" charset="utf-8"></script>
+</body>
+
+</html>
